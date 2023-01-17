@@ -16,3 +16,30 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
+var user = prompt ("Please enter your user")
+var age = prompt("Please enter your Age")
+
+
+// alter = ">= 0 && <=5";
+// alter = ">= 6 && age <= 12";
+// alter = ">= 13 && age <= 17";
+// alter = ">= 18";
+
+switch (true) 
+{
+    case (age >= 0 && age <= 5):
+        console.log(user + ", you should have some milk.");
+        break;
+    case (age >= 6 && age <= 12):
+        console.log(user + ", you should have some juice.");
+        break;
+    case (age >= 13 && age <= 17):
+        console.log(user + ", you should have some cola.");
+        break;
+    case (age >= 18):
+        console.log(user + ", you should have some wine.");
+        break;
+    default:
+        console.log("Invalid age input.");
+        break;
+}
